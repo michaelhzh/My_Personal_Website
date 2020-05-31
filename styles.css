@@ -65,7 +65,7 @@ body {
 .portfolio-img-background{
     height:1020px;
     width:100%;
-    background-size:contain;
+    background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
     bottom: 0;
@@ -118,9 +118,6 @@ body {
     margin-top: 20px;
 }
 
-body{
-    background-image: url(Images/background1.jpg);
-}
 /* Mobile usage
 
 @media only */
