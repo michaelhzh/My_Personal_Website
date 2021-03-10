@@ -1,24 +1,32 @@
 body {
-  margin: 0px;
-  display: grid;
-}
+  margin-top: 0%;
+  background-color: #F8F8FF;
+  background-color: white;
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
+  display:flex;
+  flex-direction: column;
 }
-
-.nav-wrapper {
+hr{
+  width:90%;
+}
+#nav-wrapper {
   display: flex;
-  justify-content: space-between;
-  padding: 38px;
+  width: 100%;
+  margin-bottom: 3%;
+  padding: 2%;
 }
 
 .leftside {
   display: flex;
+  flex-basis:80%;
 }
 
-.nav-wrapper > .leftside > div {
+
+.rightside {
+  flex-basis: 20%;
+}
+
+#nav-wrapper > .leftside > div {
   margin-right: 20px;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -55,31 +63,19 @@ body {
 }
 
 /*portfolio styles*/
-.portfolio-items-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-}
 
-.portfolio-item-wrapper {
-  position: relative;
-}
-.portfolio-img-background {
-  height: 500px;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  bottom: 0;
-}
-
-.image-text-wrapper {
-  position: absolute;
-  display: flex;
+#home-wrapper{
+  display:flex;
   flex-direction: column;
-  text-align: center;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  align-items: center;
+}
+.portfolio-item-wrapper {
+  order: 1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-top:5%;
+  margin-bottom:3%;
 }
 
 .subtitle1 {
@@ -98,70 +94,159 @@ body {
   color: #808080;
   font-size: 1.5em;
   text-transform: uppercase;
-  padding-left: 2em;
   padding-top: 0.5em;
-  padding-right: 2em;
 }
 
 .icon-items-wrapper {
-  position: absolute;
+  order:2;  
+  margin-bottom: 5%;
+}
+
+.icon {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  text-align: center;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
-.education {
-  display: flex;
-}
-.icon {
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 20px;
+.icon a img{
+  margin: 5px 15px;
+  width: 50px;
+  height: auto;
 }
 /* About Me*/
 .about-me {
-  position: relative;
-
   color: #808080;
+  display:flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-.about {
-  align-content: center;
-  margin-bottom: 5%;
-}
+  margin-left: 5%;
+  margin-right: 5%;
+} 
+
 .description {
   font-size: 20px;
+  margin-left:10%;
+  margin-right:10%;
 }
+
 .title {
   text-align: center;
   padding-bottom: 0.5em;
   font-size: xx-large;
 }
+.education {
+  display: flex;
+  flex-direction: row;
 
-.schools {
+}
+#schools {
   display: flex;
   flex-direction: column;
+  flex-basis: 50%;
+}
+
+#courses{
+  flex-basis: 50%;
+}
+
+#courses li{
+  text-align: left;
+  
+}
+
+#courses h1{
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+#courses h3{
+  text-align: left;
+  padding-left: 2%;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
 
 .school {
   display: flex;
   flex-direction: row;
+  margin-bottom: 50px;
 }
 
-.school_image_left {
-  height: 20%;
-  width: 20%;
-  padding-right: 1em;
-  padding-left: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+.school_image {
+  width: 200px;
+  height:200px;
+}
+#courses{
+  margin-top: 0%;
+  text-align: center;
+}
+/*work experience*/
+
+#wexperience{
+  margin-bottom: 5%;
+}
+.timeline{
+  display:grid;
+  grid-template-columns: repeat(3,1fr );
+  grid-template-areas: 
+  "a a b"
+  "c d d";
+  align-items: center;
+  row-gap: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-/* Mobile usage
+.content-right{
+  grid-area:a;
+}
 
-@media only */
+.image-left{
+  grid-area:b;
+  width: 200px;
+  align-items: center;
+}
+
+.image-right{
+  grid-area:c;
+  align-items: center;
+  width: 200px;
+}
+
+.content-left{
+  grid-area:d;
+}
+
+/* Mobile usage*/
+
+@media(max-width:1100px){
+  .education{
+    flex-direction: column  ;
+  }
+  .subtitle1{
+    text-align: center;
+  }
+  #schools{
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+  #courses{
+    flex-basis: 100%;
+  }
+  .icon{
+    width: 30px;
+  }
+}
+
+@media(max-width:1300px){
+  .description{
+    margin-left: 5%;
+    margin-right: 5%;
+
+  }
+
+  .timeline{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+

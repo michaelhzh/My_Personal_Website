@@ -3,46 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Michael He's Website</title>
     <link rel="shortcut icon" type="images/png" href="Icons/favicon2.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
-      <div class="header">
-        <div class="nav-wrapper">
-          <div class="leftside">
-            <div class="nav-link-wrapper1">
-              <a href="index.html"> Home</a>
-            </div>
-            <div class="nav-link-wrapper">
-              <a href="projects.html">Projects</a>
-            </div>
-            <div class="nav-link-wrapper">
-              <a href="wexperience.html">Work Experiences</a>
-            </div>
-            <div class="nav-link-wrapper">
-              <a href="education.html"> Education</a>
-            </div>
-            <div class="nav-link-wrapper">
-              <a href="Images/Resume.pdf"> Resume</a>
-            </div>
+      <div id="nav-wrapper">
+        <div class="leftside">
+          <div class="nav-link-wrapper">
+            <a href="#home-wrapper"> Home</a>
           </div>
-          <div class="rightside">
-            <div>Michaelhzh</div>
+          <div class="nav-link-wrapper">
+            <a href="#education"> Education</a>
           </div>
+          <div class="nav-link-wrapper">
+            <a href="wexperience.html">Work Experiences</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="#projects">Projects</a>
+          </div>
+
+
+          <div class="nav-link-wrapper">
+            <a href="Images/Resume.pdf"> Resume</a>
+          </div>
+        </div>
+        <div class="rightside">
+          <div>Michaelhzh</div>
         </div>
       </div>
 
-      <div class="content-wrapper">
-        <div class="portfolio-items-wrapper">
-          <div class="portfolio-item-wrapper">
-            <div class="portfolio-img-background"></div>
-            <div class="image-text-wrapper">
-              <div class="subtitle1">Hi, I'm Michael He</div>
-              <div class="subtitle2">Software Engineer & Project Manager</div>
-            </div>
-          </div>
+      <div id="home-wrapper">
+        <div class="portfolio-item-wrapper">
+          <div class="subtitle1">Hi, I'm Michael He</div>
+          <div class="subtitle2">Software Engineer & Project Manager</div>
         </div>
 
         <div class="icon-items-wrapper">
@@ -52,49 +47,40 @@
                 class="icon"
                 src="Icons/Linkedin.png"
                 alt="Linkedin"
-                width="50"
-                height="50"
             /></a>
             <a href="https://github.com/michaelhzh"
               ><img
                 class="icon"
                 src="Icons/Github.png"
                 alt="Github"
-                width="50"
-                height="50"
             /></a>
             <a href="https://www.instagram.com/michaelzhhe/"
               ><img
                 class="icon"
                 src="Icons/Instagram.png"
                 alt="Instagram"
-                width="50"
-                height="50"
             /></a>
             <a href="https://www.facebook.com/michael.he.9235/"
               ><img
                 class="icon"
                 src="Icons/facebook.png"
                 alt="Facebook"
-                width="50"
-                height="50"
             /></a>
             <a href="mailto:michaelhe2000@gmail.com"
               ><img
                 class="icon"
                 src="Icons/Email.png"
                 alt="Email"
-                width="50"
-                height="50"
             /></a>
           </div>
         </div>
       </div>
     </header>
     <section>
+
       <div class="about-me">
-        <div class="about">
-          <hr />
+        <hr/>
+        <div>
           <h2 class="subtitle2 title">About</h2>
           <p class="description">
             Hi, Welcome to my website. My name is Michael He. I am an
@@ -115,20 +101,21 @@
           <p class="description" style="text-align: center; margin-top: 20px">
             <b style="color: navy; size: 30px">GO BLUE !!!</b>
           </p>
+          <br/>
         </div>
         <hr />
-        <div class="education-back">
-          <h2 class="subtitle2 title">Education</h2>
+
+        <div id="education">
+          <h2  class="subtitle2 title">Education</h2>
           <div class="education">
-            <div class="schools">
+            <div id="schools">
               <div class="school">
-                <div class="school_image_left">
-                  <img
-                    src="Images/school_icon.png"
-                    alt="University of Michigan"
-                  />
-                </div>
-                <p class="description about-me">
+                <img
+                class="school_image"
+                  src="Images/school_icon.png"
+                  alt="University of Michigan"
+                />
+                <p class="description">
                   <b>University of Michigan</b> <br />
                   Expected Grducation:May 2022
                   <br />
@@ -138,23 +125,21 @@
                 </p>
               </div>
               <div class="school">
-                <div class="school_image_left">
                   <img
+                  class="school_image"
                     src="Images/SAS_icon.png"
                     alt="Shanghai American School"
                   />
-                </div>
-                <p class="description about-me">
+                <p class="description">
                   <b>Shanghai American School</b><br />Class of 2018<br />Magna
-                  Cum Laude, International Baccalaureate Bilingual Bilingual
-                  Diploma
+                  Cum Laude<br /> International Baccalaureate Bilingual Diploma
                 </p>
               </div>
             </div>
-            <div>
-              <h1 style="text-align: center">Relevant Classes</h1>
-              <h3>Computer Science</h3>
-              <ul style="font-size: 18px">
+            <div id = "courses">
+              <h1>Relevant Classes</h1>
+              <h3>Computer Science</h3> 
+              <ul style="font-size: 17px">
                 <li>EECS 445: Introduction to Machine Learning</li>
                 <li>EECS 448: Database management Systems</li>
                 <li>EECS 370: Introduction to Computer Organization</li>
@@ -165,7 +150,7 @@
                 <li>MATH 214: Linear Algebra</li>
               </ul>
               <h3>Economics</h3>
-              <ul style="font-size: 18px">
+              <ul style="font-size: 17px">
                 <li>
                   ECON 451: Intermediate Introduction to Statistics and
                   Econometrics I
@@ -178,8 +163,69 @@
             </div>
           </div>
         </div>
-        <hr />
-        <div>
+        <hr/>
+
+        <div id ="wexperience" >
+          <h1 class="subtitle2 title">Work Experience</h1>
+          <div class = "timeline">
+            <div class = "content-right">
+              <div class = "content">
+                <h2>Procter&Gamble</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos quo qui vitae magnam. Temporibus atque eaque, blanditiis illo dignissimos odit, officiis voluptates dolores, sint iusto unde id perspiciatis laudantium vel?</p>
+ 
+              </div>
+            </div>
+            <img
+            class="image-left"
+              src="Images/P&GLogo.svg"
+              alt="Procter and Gamble INC."
+            />
+
+            <div class = "content-left">
+              <div class = "content">
+                <h2>Elizebth & Bryant</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat nobis consequatur voluptatem ea, suscipit pariatur animi et, dolores architecto harum soluta ad numquam quia! Qui labore velit atque vero!</p>
+
+              </div>
+            </div>
+            <img
+            class="image-right"
+              src="Images/Elizebeth&Bryant.png"
+              alt="Elizebth & Bryant Investment Group."
+            />
+          </div>
+          <br/>
+          <div class = "timeline">
+            <div class = "content-right">
+              <div class = "content">
+                <h2>Wisetech</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos quo qui vitae magnam. Temporibus atque eaque, blanditiis illo dignissimos odit, officiis voluptates dolores, sint iusto unde id perspiciatis laudantium vel?</p>
+ 
+              </div>
+            </div>
+            <img
+            class="image-left"
+              src="Images/wise-tech.png"
+              alt="Wisetech Global"
+            />
+
+            <div class = "content-left">
+              <div class = "content">
+                <h2>University of Michigan Research</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellat nobis consequatur voluptatem ea, suscipit pariatur animi et, dolores architecto harum soluta ad numquam quia! Qui labore velit atque vero!</p>
+
+              </div>
+            </div>
+            <img
+            class="image-right"
+              src="Images/school_icon.png"
+              alt="University of Michigan Research"
+            />
+
+          </div>
+        </div>
+        <hr/>
+        <div id = "projects">
           <h1 class="subtitle2 title">Projects</h1>
           <div class="project-list">
             <div class="school">
@@ -205,5 +251,14 @@
         </div>
       </div>
     </section>
+    <hr style= "width:100%"/>
+    <footer class = "description">
+      <p style="font-size: 18px; color:gray;">
+        ©2020 Michael He's Website. All Rights Reserved.
+      </p>
+      <div class="nav-link-wrapper" style="width: 130px;">
+        <a href="#nav-wrapper"> BACK TO TOP</a>
+      </div>
+    </footer>
   </body>
 </html>
